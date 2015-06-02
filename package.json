@@ -1,0 +1,25 @@
+{
+  "name": "iTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint:app": "eslint app/",
+
+    "test:app": "istanbul cover ./node_modules/mocha/bin/_mocha test/unit-tests/**/*.js --config=test/.istanbul.yml",
+    "coverage:app": "istanbul check-coverage test/coverage/coverage.json --statement 80 --branch 80 --function 80",
+
+    "build:app": "npm run lint:app && npm run test:app && npm run coverage:app",
+    "postbuild:app": "echo app built ok",
+
+    "build": "npm run build:app"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "istanbul": "^0.3.14",
+    "lodash": "^3.9.3",
+    "mocha": "^2.2.5"
+  }
+}
