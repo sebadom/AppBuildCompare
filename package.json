@@ -1,7 +1,7 @@
 {
-  "name": "iTest",
+  "name": "npmAsBuildTool",
   "version": "1.0.0",
-  "description": "",
+  "description": "Just a testo to check if i can dish gulp or grunt if there is no need to have them",
   "main": "index.js",
   "scripts": {
     "lint:app": "eslint app/",
@@ -14,8 +14,8 @@
 
     "build": "npm run build:app"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Sebastian Dominguez <sebadominguezpicchio@gmail.com>",
+  "license": "",
   "devDependencies": {
     "chai": "^2.3.0",
     "istanbul": "^0.3.14",
