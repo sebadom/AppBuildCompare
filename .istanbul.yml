@@ -1,3 +1,6 @@
+instrumentation:
+    root: ./app
+    include-all-sources: true
 reporting:
     dir: ./test/coverage
     watermarks:

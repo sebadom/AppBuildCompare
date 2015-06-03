@@ -4,22 +4,26 @@
   "description": "Just a testo to check if i can dish gulp or grunt if there is no need to have them",
   "main": "index.js",
   "scripts": {
-    "lint:app": "eslint app/",
-
-    "test:app": "istanbul cover ./node_modules/mocha/bin/_mocha test/unit-tests/**/*.js --config=test/.istanbul.yml",
+    "style:app": "jscs ./app",
+    "lint:app": "eslint ./app",
+    "test:app": "istanbul cover ./node_modules/mocha/bin/_mocha -- \"test/**/test*.js\"",
     "coverage:app": "istanbul check-coverage test/coverage/coverage.json --statement 80 --branch 80 --function 80",
-
-    "build:app": "npm run lint:app && npm run test:app && npm run coverage:app",
+    "prebuild:app": "npm run lint:app && npm run style:app && npm run test:app && npm run coverage:app",
+    "build:app": "browserify ./app/index.js -t uglifyify -o ./dist/app.min.js",
     "postbuild:app": "echo app built ok",
-
     "build": "npm run build:app"
   },
   "author": "Sebastian Dominguez <sebadominguezpicchio@gmail.com>",
   "license": "",
   "devDependencies": {
+    "babel": "^5.4.7",
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.3",
     "chai": "^2.3.0",
     "istanbul": "^0.3.14",
+    "jscs": "^1.13.1",
     "lodash": "^3.9.3",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "uglifyify": "^3.0.1"
   }
 }

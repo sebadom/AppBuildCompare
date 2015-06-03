@@ -1,7 +1,7 @@
 # node_modules ignored by default
 
 # Ignore files compiled from TypeScript and CoffeeScript
-**/*.{ts,coffee}.js
+**/*.{ts,coffee,min}.js
 
 # Ignore built files except build/index.js
 **/vendor/*

@@ -1,14 +1,9 @@
 var assert = require('chai').assert;
-//var helpers = require('../../app/helpers.js');
-var loader = require('../loader');
+var loader = require('../../loader');
 
-var helpers = loader.load('app/helpers.js')
-console.log(helpers);
-suite('Helpers', function(){
-  setup(function(){
-    // ...
-  });
+var helpers = loader.load('app/helpers/utils.js');
 
+suite('Helpers', function() {
   suite('#noop()', function(){
     test('it returns nooped', function(){
       assert.equal(helpers.noop(), 'nooped');
