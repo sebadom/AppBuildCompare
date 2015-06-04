@@ -4,6 +4,7 @@
   "description": "Just a testo to check if i can dish gulp or grunt if there is no need to have them",
   "main": "index.js",
   "scripts": {
+    "bower": "bower --save",
     "style:app": "jscs ./app",
     "lint:app": "eslint ./app",
     "test:app": "istanbul cover ./node_modules/mocha/bin/_mocha -- \"test/**/test*.js\"",
@@ -16,10 +17,10 @@
   "author": "Sebastian Dominguez <sebadominguezpicchio@gmail.com>",
   "license": "",
   "devDependencies": {
-    "babel": "^5.4.7",
-    "babelify": "^6.1.2",
+    "bower": "^1.4.1",
     "browserify": "^10.2.3",
     "chai": "^2.3.0",
+    "eslint": "^0.22.1",
     "istanbul": "^0.3.14",
     "jscs": "^1.13.1",
     "lodash": "^3.9.3",
