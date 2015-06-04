@@ -1,8 +1,8 @@
-var path = require('path');
-var root = '../';
+var proxyquire = require('proxyquire'),
+    path = require('path'),
+    root = '../';
 
-module.exports = {
-  load: function(thepath) {
-    return require(path.normalize(root + thepath));
-  }
+
+exports.load = function(thepath, stubs) {
+    return proxyquire(path.normalize(root + thepath), stubs || {});
 };
