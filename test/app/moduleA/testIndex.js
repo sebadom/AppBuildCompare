@@ -24,7 +24,7 @@ suite('Module A', function () {
 
   suite('#greet()', function () {
     test('it greets me', function () {
-      assert.equal(mod.greet(), 'Hi, my name is module A');
+      assert.equal(mod.greet(), 'Hiasd, my name is module A');
     });
   });
 });
