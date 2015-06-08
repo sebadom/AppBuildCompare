@@ -13,3 +13,11 @@ Current strategies:
 - gulp
 - grunt
 - buildScripts (WIP)
+
+Current dummy app is basically a browserify pipe, loading a couple of scripts andsaved with the uglified output.
+
+It checks linting with eslint and jscs to have a styling report (not with auto fix)
+It is intended to be tested with Mocha and having a coberture check with Istanbul.
+
+Pipeline goes like: lint -> style -> test -> bundle -> minified file
+
