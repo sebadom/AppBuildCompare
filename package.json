@@ -4,6 +4,7 @@
   "description": "Just a testo to check if i can dish gulp or grunt if there is no need to have them",
   "main": "index.js",
   "scripts": {
+    "grunt": "grunt",
     "bower": "bower --save",
     "style:app": "jscs ./app",
     "lint:app": "eslint ./app",
@@ -21,6 +22,13 @@
     "browserify": "^10.2.3",
     "chai": "^2.3.0",
     "eslint": "^0.22.1",
+    "grunt-browserify": "^3.8.0",
+    "grunt-env": "^0.4.4",
+    "grunt-eslint": "^14.0.0",
+    "grunt-istanbul": "^0.5.0",
+    "grunt-jscs": "^1.8.0",
+    "grunt-mocha-istanbul": "^2.4.0",
+    "grunt-mocha-test": "^0.12.7",
     "istanbul": "^0.3.14",
     "jscs": "^1.13.1",
     "lodash": "^3.9.3",
@@ -28,5 +36,9 @@
     "proxyquire": "^1.5.0",
     "sinon": "^1.14.1",
     "uglifyify": "^3.0.1"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13"
   }
 }
