@@ -1,0 +1,11 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  rules: {
+    "brace-style": "1tbs",
+    "quotes": "single"
+  }
+}

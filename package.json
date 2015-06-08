@@ -1,8 +1,23 @@
 {
-  "name": "Build strategies comparing",
+  "name": "npmAsBuildTool",
   "version": "1.0.0",
   "description": "A small testing between app building strategies",
   "main": "app/index.js",
   "author": "Sebastian Dominguez <sebadominguezpicchio@gmail.com>",
-  "license": ""
+  "license": "",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^0.13.2",
+    "gulp-istanbul": "^0.10.0",
+    "gulp-jscs": "^1.6.0",
+    "gulp-mocha": "^2.1.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
 }
